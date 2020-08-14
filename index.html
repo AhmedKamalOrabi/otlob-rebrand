@@ -38,8 +38,7 @@
           0,
           0.8
         ); /* Black background with opacity */
-        z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-        cursor: pointer; /* Add a pointer on hover */
+        z-index: -1; /* Specify a stack order in case you're using a different order for other elements */
       }
       .flex {
         display: flex;
@@ -113,27 +112,24 @@
       }
     </style>
   </head>
-  <body class="flex">
-    <div id="overlay">
-      <div class="logos flex row center">
-        <img class="otlob" src="images/otlob.png" alt="otlob-logo" />
-        <span class="arrow">&#8658;</span>
-        <img class="talabt" src="images/Talabat-logo.png" alt="talabat-logo" />
-      </div>
-      <div class="flex column info">
-        <h1><span class="rebrand-span">We’ve</span> rebranded ...</h1>
-        <p>
-          <span class="talabaty">Hi Talabaty ,</span>
-          <br />
-          Otlob CMS has been migrated to Talabat, All you have to do is to click
-          on the below link and select country "Egypt" <a href="#">URL</a>
-          <br />
-          If you are facing any problem with the access kindly send an email to
-          <a href="mailto:infor@talabat.com">Email</a>
-          <br />
-          We can also add otlob and talabat logos
-        </p>
-      </div>
+  <body>
+    <div id="overlay"></div>
+    <div class="logos flex row center">
+      <img class="otlob" src="images/otlob.png" alt="otlob-logo" />
+      <span class="arrow">&#8658;</span>
+      <img class="talabt" src="images/Talabat-logo.png" alt="talabat-logo" />
+    </div>
+    <div class="flex column info">
+      <h1><span class="rebrand-span">We’ve</span> rebranded ...</h1>
+      <p>
+        <span class="talabaty">Hi Talabaty ,</span>
+        <br />
+        Otlob CMS has been migrated to Talabat, All you have to do is to click
+        on the below link and select country "Egypt" <a href="#">URL</a>
+        <br />
+        If you are facing any problem with the access kindly send an email to
+        <a href="mailto:infor@talabat.com">Email</a>
+      </p>
     </div>
   </body>
 </html>
