@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Talabat Rebrand</title>
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        height: 100vh;
+        background-image: url(images/img-delivery@3x.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+      .img-container {
+        max-width: 100%;
+      }
+      img {
+        width: 100%;
+      }
+      #overlay {
+        position: fixed; /* Sit on top of the page content */
+        display: block; /* Hidden by default */
+        width: 100%; /* Full width (cover the whole page) */
+        height: 100%; /* Full height (cover the whole page) */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.8
+        ); /* Black background with opacity */
+        z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+        cursor: pointer; /* Add a pointer on hover */
+      }
+      .flex {
+        display: flex;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .info {
+        position: absolute;
+        left: 25%;
+        color: white;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+      }
+      .info h1 {
+        padding: 50px;
+        border: 5px solid tomato;
+        color: tomato;
+        font-size: 43px;
+        width: 250px;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .info .rebrand-span {
+        font-size: 60px;
+      }
+      .info p {
+        line-height: 1.8;
+        font-size: 1.3em;
+        border: 3px dotted tomato;
+        padding: 30px;
+      }
+      .talabaty {
+        color: tomato;
+        font-size: 28px;
+      }
+      a {
+        color: tomato;
+        font-weight: bold;
+      }
+      .row {
+        flex-direction: row;
+      }
+      .center {
+        justify-content: center;
+        align-items: center;
+      }
+      .logos {
+        max-width: 100%;
+        margin-top: 30px;
+      }
+      .logos .otlob {
+        width: 100px;
+      }
+      .logos .talabt {
+        width: 130px;
+      }
+      .arrow {
+        font-size: 100px;
+        color: tomato;
+        margin-left: 20px;
+      }
+      @media only screen and (max-width: 768px) {
+        .info {
+          left: 0;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <div id="overlay">
+      <div class="logos flex row center">
+        <img class="otlob" src="images/otlob.png" alt="otlob-logo" />
+        <span class="arrow">&#8658;</span>
+        <img class="talabt" src="images/Talabat-logo.png" alt="talabat-logo" />
+      </div>
+      <div class="flex column info">
+        <h1><span class="rebrand-span">We’ve</span> rebranded ...</h1>
+        <p>
+          <span class="talabaty">Hi Talabaty ,</span>
+          <br />
+          Otlob CMS has been migrated to Talabat, All you have to do is to click
+          on the below link and select country "Egypt" <a href="#">URL</a>
+          <br />
+          If you are facing any problem with the access kindly send an email to
+          <a href="mailto:infor@talabat.com">Email</a>
+          <br />
+          We can also add otlob and talabat logos
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
